@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+main{
+    /* width: 65%; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #19181F;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4em;
+    grid-area: main;
+}
+
+main img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main .title p{
+    color: #6C6B70;
+}
+
+main .movie-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+}
+.fa-star{
+    font-size:14px;
+    color: rgb(250, 208, 21);
+    margin-right: 10px;
+}
+
+main .movie h3{
+    height: 50px;
+}
+
+.underline{
+    height: 1px;
+    background-color: #25232A;
+    margin: 50px 0;
+}
