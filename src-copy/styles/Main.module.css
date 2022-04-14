@@ -25,15 +25,10 @@ main .title p{
     color: #6C6B70;
 }
 
-main .movie-container{
+main .movieContainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 60px;
-}
-.fa-star{
-    font-size:14px;
-    color: rgb(250, 208, 21);
-    margin-right: 10px;
 }
 
 main .movie h3{

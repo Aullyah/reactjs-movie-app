@@ -1,19 +1,19 @@
 // import { Component } from "react";
-import "../../styles/header.css"
-import ProfilImage from "../../assets/profil.jpg"
+import styles from '../../styles/Header.module.css'
+// import ProfilImage from "../../assets/profil.jpg"
 
 const Header = () => {
 
     return(
         <nav>
-            <div className="search">
+            <div className={styles.search}>
                 <input type="text" placeholder="Search any movies or tv shows"/>
             </div>
-            <ul className="nav-header">
-                    <li className="active">Movies</li>
+            <ul className={styles.navHeader}>
+                    <li className={styles.active}>Movies</li>
                     <li>TV Shows</li>
                     <li>Watchlist</li>
-                    <li className="profil-img">
+                    <li className={styles.profilImg}>
                         {/* <img src={ProfilImage} alt="Profil"/> */}
                     </li>
                 </ul>

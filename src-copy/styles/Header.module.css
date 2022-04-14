@@ -24,17 +24,17 @@ nav input::placeholder{
     font-size: 20px;
 }
 
-.nav-header{
+.navHeader{
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 
-.nav-header li{
+.navHeader li{
     margin-left: 30px;
 }
 
-.profil-img{
+.profilImg{
     width: 40px;
     height: 40px;
     border-radius: 100%;
