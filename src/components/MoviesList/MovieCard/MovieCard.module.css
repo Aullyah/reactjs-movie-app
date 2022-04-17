@@ -1,0 +1,21 @@
+.iconStyles{
+    font-size: 14px;
+    color: '#fad015';
+    margin-right: 10px;
+}
+
+.movie {
+    width: 80%;
+}
+
+.movie h3{
+    margin: 40px 0 10px 0;
+}
+
+.movie p{
+    color: #6a6c6e;
+}
+
+.movie img{
+    border-radius: 10px;
+}

@@ -73,7 +73,7 @@ li.active {
 /* Main */
 main {
     display: grid;
-    grid-template-columns: 14vw 80vw;
+    grid-template-columns: 1fr 5fr;
     margin: 20px 40px;
 }
 
@@ -100,7 +100,7 @@ main {
 .mainContent {
     background-color: #19181f;
     border-radius: 10px;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .movieHeader {
@@ -115,29 +115,28 @@ main {
 
 .movieContainer {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 40px;
 }
 
+.movie {
+    width: 80%;
+}
 
+.movie h3{
+    margin: 40px 0 10px 0;
+}
+
+.movie p{
+    color: #6a6c6e;
+}
+
+.movie img{
+    border-radius: 10px;
+}
 
 img {
     width: 100%;
-}
-
-.loadMore{
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.loadMore button{
-    outline: none;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 3px;
-    font-size: 18px;
 }
 
 .wrapLoader{
