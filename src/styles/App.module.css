@@ -16,7 +16,7 @@ body {
 header {
     margin: 20px 40px;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1.3fr 1fr;
     height: 100px;
     line-height: 100px;
 }
@@ -60,6 +60,11 @@ nav ul li {
 li.active {
     color: white;
 }
+
+a{
+    text-decoration: none;
+}
+
 .profileImg{
     line-height: 125px;
 }

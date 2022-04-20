@@ -1,0 +1,50 @@
+.watchList{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.watchList > h2, .watchList > p{
+    text-align: center;
+}
+
+/* img{
+    width: 100%;
+} */
+
+.watchListView{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.watchListCard{
+    display: flex;
+    align-items: center;
+    width: 50%;
+   /* border: 1px solid #fff; */
+   background-color: #fff;
+   color: #333;
+   padding: 20px 10px;
+   border-radius: 5px;
+   margin: 20px 0;
+}
+
+.watchListCard img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.watchListCard .cardVoting{
+    width: 100%;
+    text-align: right;
+}
+
+.cardTitle p{
+    margin-top: 5px;
+    font-size: 12px;
+}

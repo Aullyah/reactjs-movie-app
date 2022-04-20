@@ -1,8 +1,9 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { API_KEY } from "./shared/shared";
-import styles from './styles/App.module.css';
-import MoviesList from "./components/MoviesList/MoviesList";
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { API_KEY } from "./shared/shared"
+import styles from './styles/App.module.css'
+import MoviesList from "./components/MoviesList/MoviesList"
+import { Link } from "react-router-dom"
 
 const App = () => {
     const [genres, setGenres] = useState([])
@@ -18,7 +19,7 @@ const App = () => {
 
     useEffect(() => {
         const fetchMovie = async () => {
-            console.log(page)
+            // console.log(page)
             setIsLoading(true)
             setTimeout(async () => {
                 let lang = 'en-US'
@@ -105,7 +106,9 @@ const App = () => {
                     <ul>
                         <li className={styles.active}>Movies</li>
                         <li>TV Shows</li>
-                        {/* <li>Watchlist</li> */}
+                        <Link to='/watchlist'>
+                            <li>Watchlist</li>
+                        </Link>
                         <li className={styles.profileImg}><img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80" alt='profile img' /></li>
                     </ul>
                 </nav>
@@ -141,6 +144,7 @@ const App = () => {
                 </div>
 
             </main>
+
         </div>
     )
 }
